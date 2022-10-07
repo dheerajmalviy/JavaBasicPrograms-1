@@ -1,0 +1,19 @@
+import java.io.*;
+class PrintName{                                       
+ 
+    void setWish(String nameread){              r
+        System.out.println("Hello "+nameread+"."+" Welcome!"); 
+    }
+}
+ 
+class PrintString{                             
+    public static void main(String args[]) throws IOException{
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        //reading input stream
+        PrintName pn=new PrintName();           
+        System.out.print("Enter the Name:");
+        String nameread=br.readLine();          
+        pn.setWish(nameread);               
+ 
+    }
+}
